@@ -4,7 +4,7 @@ import {
   getRobotById,
   deleteRobotById,
   editRobotById,
-} from "../controllers/robotsControllers.js";
+} from "../controllers/robotCobtrollers/robotsControllers.js";
 import routes from "./routes.js";
 
 const {

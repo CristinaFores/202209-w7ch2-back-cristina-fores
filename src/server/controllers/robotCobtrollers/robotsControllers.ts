@@ -1,9 +1,9 @@
-import "../loadEnvironment.js";
+import "../../loadEnvironment.js";
 import debug from "debug";
 import type { NextFunction, Request, Response } from "express";
 import mongoose from "mongoose";
-import CustomError from "../../CustomError/CustomError.js";
-import Robot from "../../database/models/Robot.js";
+import CustomError from "../../../CustomError/CustomError.js";
+import Robot from "../../../database/models/Robot.js";
 
 const token = process.env.TOKEN;
 
