@@ -4,8 +4,9 @@ import { generalError, unknownEndpoint } from "./middleware/errors.js";
 import robotRouter from "./routers/robotsRouter.js";
 import cors from "cors";
 import routes from "./routers/routes.js";
+import usersRouter from "./routers/userRobots.js";
 
-const { robots: robotsPath } = routes;
+const { robots: robotUserPath } = routes;
 
 const app = express();
 
@@ -14,8 +15,8 @@ app.disable("x-powered-by");
 app.use(express.json());
 app.use(morgan("dev"));
 
-app.use(robotsPath, robotRouter);
-
+app.use(robotUserPath, robotRouter);
+app.use("/users", usersRouter);
 app.use("/*", unknownEndpoint);
 app.use(generalError);
 

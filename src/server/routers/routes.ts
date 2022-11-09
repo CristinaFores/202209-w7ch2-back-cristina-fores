@@ -4,6 +4,7 @@ const routes = {
   getRobotRouteById: "/robot/:idRobot",
   deletRobotRouterById: "/robot/:idRobot",
   editRobotRouterById: "/robot/:idRobot",
+  loginUserRouter: "/login",
 };
 
 export default routes;

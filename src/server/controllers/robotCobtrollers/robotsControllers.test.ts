@@ -5,8 +5,8 @@ import {
   getRobotById,
   getRobots,
 } from "./robotsControllers";
-import Robot from "../../database/models/Robot.js";
-import mockFindReturnValue from "../../mocks/mockFindReturnValue.js";
+import Robot from "../../../database/models/Robot.js";
+import mockFindReturnValue from "../../../mocks/mockFindReturnValue.js";
 import mongoose, { Error } from "mongoose";
 
 beforeEach(() => {
